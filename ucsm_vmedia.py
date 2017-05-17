@@ -16,7 +16,7 @@ def createVirtualMedia(handle):
         mapping_name="RHEL-7-3",
         device_type="cdd",
         mount_protocol="http",
-        remote_ip_address="192.168.2.2",
+        remote_ip_address="192.168.0.100",
         image_name_variable="none",
         image_file_name="rhel-server-7.3-x86_64-dvd.iso",
         image_path="install")
@@ -25,7 +25,7 @@ def createVirtualMedia(handle):
         mapping_name="kickstartImage",
         device_type="hdd",
         mount_protocol="http",
-        remote_ip_address="192.168.2.2",
+        remote_ip_address="192.168.0.100",
         image_name_variable="service-profile-name",
         image_path="install")
     handle.add_mo(mo, modify_present=True)
